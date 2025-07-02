@@ -17,7 +17,7 @@
 - **Backend API**: Built with **.NET 8 Web API** for scalable task management.
 - **SQL Database**: Uses **Microsoft SQL Server** to store and manage task data.
 - **Dockerized Application**: Both frontend and backend are containerized using Docker and orchestrated with Docker Compose.
-- **Responsive UI**: Includes a collapsible side menu, colored status indicators, and a mobile-friendly layout.
+- **Responsive UI**: Includes a collapsible side menu, colored status indicators, and a user-friendly layout.
 
 ## Technologies Used
 
