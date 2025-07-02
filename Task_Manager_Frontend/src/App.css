@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.table thead th {
+  background-color: #007bff !important; /* Set table header background to Bootstrap primary blue */
+  color: white; /* Set table header text color to white for contrast */
+}
+.is-invalid {
+  border: 1px solid red;
+  background-color: #fff0f0;
+}
+

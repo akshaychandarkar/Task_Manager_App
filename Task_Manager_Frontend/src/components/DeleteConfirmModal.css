@@ -1,0 +1,52 @@
+/* Container for the tick icon – centers content horizontally and vertically */
+.tick-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Circular background for the tick icon */
+.tick-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;           /* Makes it a perfect circle */
+  background-color: #dee2e6;    /* Light gray background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pop 0.3s ease-out; /* Entry animation for circle */
+}
+
+/* Tick icon styling */
+.tick-icon {
+  color: #dc3545;               /* Bootstrap danger red color */
+  font-size: 2.5rem;            /* Large icon size */
+  animation: tickBounce 0.5s ease; /* Apply bounce animation */
+}
+
+/* Bounce-in animation for tick icon */
+@keyframes tickBounce {
+  0% {
+    transform: scale(0.2);      /* Start very small */
+    opacity: 0;                 /* Start invisible */
+  }
+  50% {
+    transform: scale(1.2);      /* Slight overshoot for bounce effect */
+    opacity: 1;                 /* Fully visible */
+  }
+  100% {
+    transform: scale(1);        /* Settle to normal size */
+  }
+}
+
+/* Pop animation for the tick-circle entry */
+@keyframes pop {
+  from {
+    transform: scale(0.9);      /* Slightly smaller at start */
+    opacity: 0.5;               /* Semi-transparent at start */
+  }
+  to {
+    transform: scale(1);        /* Grow to full size */
+    opacity: 1;                 /* Fully opaque */
+  }
+}

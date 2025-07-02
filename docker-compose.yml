@@ -1,0 +1,26 @@
+version: '3.8'               # Compose file format version
+
+services:                    # Define the services that make up your app
+
+  backend:                   # Service for your ASP.NET Core backend API
+    build:                   # Build instructions for backend container
+      context: ./Task_Manager_Backend  # Path to backend Dockerfile directory
+    ports:
+      - "5000:5000"          # Maps host port 5000 -> container port 5000
+    environment:
+      - ASPNETCORE_URLS=http://0.0.0.0:5000  # Makes .NET app listen on all interfaces
+    networks:
+      - app-network          # Connects backend to the shared network
+
+  frontend:                  # Service for your React frontend app
+    build:
+      context: ./Task_Manager_Frontend  # Path to frontend Dockerfile directory
+    ports:
+      - "3000:80"            # Maps host port 3000 -> container port 80 (nginx default)
+    depends_on:
+      - backend              # Ensures backend starts before frontend
+    networks:
+      - app-network          # Connects frontend to the shared network
+
+networks:
+  app-network:               # Defines a user-defined bridge network for service communication

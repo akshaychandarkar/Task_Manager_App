@@ -1,0 +1,26 @@
+/* Styles for circular pagination buttons */
+.circle-btn {
+  width: 38px;                     /* Make button square: 38x38 pixels */
+  height: 38px;
+  border-radius: 50%;              /* Makes it perfectly circular */
+  border: none;                    /* Removes default button border */
+  background-color: #007bff;       /* Bootstrap primary blue */
+  color: white;                    /* White text/icon color */
+  display: flex;                   /* Use flex to center content */
+  align-items: center;             /* Vertically center icon inside button */
+  justify-content: center;         /* Horizontally center icon inside button */
+  transition: 0.3s;                /* Smooth color transition on hover */
+}
+
+/* Hover state: darker blue when active and not disabled */
+.circle-btn:hover:not(:disabled) {
+  background-color: #0056b3;       /* Darker shade of blue on hover */
+}
+
+/* Disabled state: gray background and text, prevents interaction */
+.circle-btn.disabled,
+.circle-btn:disabled {
+  background-color: #d6d6d6;       /* Light gray background when disabled */
+  color: #999;                     /* Dim gray color for icon/text */
+  cursor: not-allowed;             /* Show 'not-allowed' cursor on hover */
+}
