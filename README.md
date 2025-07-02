@@ -2,9 +2,7 @@
 
 ## Overview
 
-**Task_Manager_App** is a full-stack, interactive task management application featuring a **React frontend** and a **.NET 8 Web API backend**, using **MS SQL Server** for persistent data storage. The app supports complete **CRUD operations** (Create, Read, Update, Delete) on tasks. The entire application is **Dockerized** for seamless setup and deployment. Tasks can also be **sorted and filtered by status**, making it easy to track progress across multiple tasks.
-
-Users can add, edit, reset, and delete tasks through a responsive, modern UI with real-time form validation and instant feedback via toast notifications.
+**Task_Manager_App** is a full-stack, interactive task management application featuring a **React frontend** and a **.NET 8 Web API backend**, using **MS SQL Server** for persistent data storage. The app supports complete **CRUD operations** (Create, Read, Update, Delete) on tasks. The entire application is **Dockerized** for seamless setup and deployment. Tasks can also be **sorted and filtered by status**, making it easy to track progress across multiple tasks. Users can add, edit, reset, and delete tasks through a responsive, modern UI with real-time form validation and instant feedback via toast notifications.
 
 ## Features
 
@@ -37,47 +35,6 @@ Users can add, edit, reset, and delete tasks through a responsive, modern UI wit
   - FontAwesome (icons)
   - Docker & Docker Compose (containerization)
 
-## Screenshots
-
-### Home Screens
-#### List Tasks Page
-![List Tasks Home](Screenshots/ListTaskHome.png)  
-#### Add Task Page
-![Add Task Home](Screenshots/AddTaskHome.png)  
-
----
-
-### Add Task
-
-![Add Task Form](Screenshots/AddTask.png) 
-
-![Add Success](Screenshots/TaskAddSuccess.png)  
-
----
-
-### Update Task
-
-![Edit Task](Screenshots/UpdateTask.png)  
-
-![Update Success](Screenshots/TaskUpdateSuccess.png)  
-
----
-
-### Task List
-
-![List Task](Screenshots/ListTask.png)  
- 
----
-
-### Delete Task
-
-![Delete Confirmation Modal](Screenshots/DeleteConfirmation.png) 
-
-![Task Deleted Toast](Screenshots/TaskDeleted.png) 
-
-![List View](Screenshots/AfterDeleteList.png) 
-
----
 
 ## Project Architecture
 
@@ -113,6 +70,79 @@ Task_Manager_App/
 - Tasks can be filtered by status in the frontend for better task management.
 - Ensure Docker Desktop is installed and running before starting the app.
 
+## Screenshots
+
+### Home Screens
+
+#### List Tasks Page
+![List Tasks Home](Task_Manager_Frontend/Screenshots/ListTaskHome.png)  
+
+#### Add Task Page
+![Add Task Home](Task_Manager_Frontend/Screenshots/AddTaskHome.png)  
+
+---
+
+### Add Task
+
+![Add Task Form](Task_Manager_Frontend/Screenshots/AddTask.png)  
+
+---
+
+###  Update Task
+
+![Edit Task](Task_Manager_Frontend/Screenshots/UpdateTask.png)  
+
+---
+
+### Delete Task
+
+#### Delete Confirmation Modal
+![Delete Confirmation](Task_Manager_Frontend/Screenshots/DeleteTaskConfirm.png)  
+
+#### Task Deleted
+![Task Deleted](Task_Manager_Frontend/Screenshots/DeleteTask.png)  
+
+---
+
+### Task Lists
+
+#### Task List View 1
+![Task List 1](Task_Manager_Frontend/Screenshots/TaskList1.png)  
+
+#### Task List View 2
+![Task List 2](Task_Manager_Frontend/Screenshots/TaskList2.png)  
+
+---
+
+### Task Sorting & Status Filters
+
+#### Not Started Tasks
+![Not Started Tasks](Task_Manager_Frontend/Screenshots/TaskNotStarted.png)  
+
+#### In Progress Tasks
+![In Progress Tasks](Task_Manager_Frontend/Screenshots/TaskInProgress.png)  
+
+#### Completed Tasks
+![Completed Tasks](Task_Manager_Frontend/Screenshots/TaskCompleted.png)  
+
+---
+
+### Backend & Deployment
+
+#### Backend SQL Data
+![Backend SQL](Task_Manager_Frontend/Screenshots/TaskManagerBackend_SQL.png)  
+
+#### Swagger API
+![Swagger UI](Task_Manager_Frontend/Screenshots/TaskManagerBackend_Swagger.png)  
+
+#### Docker Setup
+![Docker Running](Task_Manager_Frontend/Screenshots/TaskManager_Docker.png) 
+
+---
+
 ## License
+
+```bash
 This project is licensed for personal and educational use.
+Developed by Akshay Chandarkar.
 
