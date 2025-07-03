@@ -61,8 +61,8 @@ Task_Manager_App/
    - Backend Swagger UI: http://localhost:5000/swagger/index.html
 
 4. **Use the App**
- - Add, edit, delete, and filter tasks directly from the frontend.
- - All task data is saved and retrieved via your .NET backend and stored in your SQL database.
+   - Add, edit, delete, and filter tasks directly from the frontend.
+   - All task data is saved and retrieved via your .NET backend and stored in your SQL database.
 
 ## Notes
 - The API base URL is set in the frontend’s .env file using REACT_APP_API_BASE_URL.
