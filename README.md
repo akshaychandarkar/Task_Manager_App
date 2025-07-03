@@ -23,7 +23,7 @@
 
 - **Frontend**:
   - React
-  - JavaScript (or TypeScript if extended later)
+  - JavaScript 
   - HTML & CSS
 - **Backend**:
   - .NET 8 Web API
